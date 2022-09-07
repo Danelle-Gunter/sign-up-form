@@ -1,3 +1,7 @@
+:root {
+    --link-color: darkolivegreen;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -41,9 +45,14 @@ main {
     background-color: #eee;
 }
 
+.group {
+    margin: 20px 0 30px 0;
+}
+
 .content p,
 .form-area p {
     font-weight: bold;
+    line-height: 1.1rem;
 }
 
 .content,
@@ -51,11 +60,45 @@ main {
     padding: 30px;
 }
 
+.form-area {
+    box-shadow: 0 5px 5px #aaa;
+}
+
+.form-area p {
+    margin-bottom: 1.2rem;
+}
+
 form .form-area {
     display: grid;
     background-color: white;
     padding: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-area p {
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration-style: none;
 }
 
 button {
@@ -63,6 +106,6 @@ button {
     height: 40px;
     border-radius: 5px;
     font-weight: bold;
-    background-color: darkolivegreen;
+    background-color: var(--link-color);
     color: white;
 }
