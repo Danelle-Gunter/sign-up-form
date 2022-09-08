@@ -81,18 +81,15 @@ main {
 }
 
 .form-area {
+    display: grid;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 10px;
     box-shadow: 0 5px 5px #aaa;
 }
 
 .form-area p {
     margin-bottom: 1.2rem;
-}
-
-form .form-area {
-    display: grid;
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 10px;
 }
 
 .btn-area p {
