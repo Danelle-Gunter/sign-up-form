@@ -81,7 +81,9 @@ main {
 }
 
 .form-area {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
     background-color: white;
     padding: 30px;
     margin-bottom: 10px;
@@ -89,6 +91,36 @@ main {
 }
 
 .form-area p {
+    font-size: 20px;
+    margin-bottom: 1.3rem;
+}
+
+.blank {
+    height: 20px;
+    margin-bottom: 1.3rem;
+}
+
+.left-side,
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+input {
+    width: 200px;
+    height: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 1.2rem;
 }
 
