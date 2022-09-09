@@ -1,5 +1,5 @@
 :root {
-    --link-color: darkolivegreen;
+    --link-color: #122548;
 }
 
 * {
@@ -11,7 +11,7 @@
 body {
     display: flex;
     flex-direction: row;
-    width: 1200px;
+    width: 1000px;
     height: 800px;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -21,15 +21,19 @@ section {
     flex-direction: column;
     position: relative;
     width: 400px;
-    background-color: var(--link-color);
     color: white;
+    background-image: url("alexander-andrews-moon-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--link-color);
 }
 
 h1 {
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 60px; 
+    font-size: 50px; 
+    text-transform: uppercase;
 }
 
 .fancy-strip {
@@ -38,7 +42,7 @@ h1 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 25%;
+    top: 23%;
     width: 100%;
     height: 100px;
     background-color: #00000050;  
@@ -91,6 +95,7 @@ main {
 }
 
 .form-area p {
+    color: var(--link-color);
     font-size: 20px;
     margin-bottom: 1.3rem;
 }
@@ -124,6 +129,11 @@ input {
     margin-bottom: 1.2rem;
 }
 
+input:focus {
+    outline-color: #3d7eac;
+    box-shadow: 3px 3px #ccc;
+}
+
 .btn-area p {
     padding-top: 20px;
 }
@@ -147,14 +157,20 @@ input {
 }
 
 .log-in:active {
-    text-decoration-style: none;
+    text-decoration: none;
 }
 
 button {
     width: 150px;
     height: 40px;
+    border: none;
     border-radius: 5px;
+    box-shadow: 2px 2px #aaa;
     font-weight: bold;
     background-color: var(--link-color);
     color: white;
+}
+
+button:hover {
+    background-color: #3d7eac;
 }
