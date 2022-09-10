@@ -1,5 +1,6 @@
 :root {
     --link-color: #122548;
+    --hover-color: #3d7eac;
 }
 
 * {
@@ -154,6 +155,7 @@ input:focus {
 
 .log-in:hover {
     text-decoration: none;
+    color: var(--hover-color);
 }
 
 .log-in:active {
@@ -172,5 +174,5 @@ button {
 }
 
 button:hover {
-    background-color: #3d7eac;
+    background-color: var(--hover-color);
 }
